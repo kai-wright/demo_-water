@@ -1,0 +1,95 @@
+#video_container {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 2em;
+    header {
+        padding: 1em;
+    }
+    #hero_vid {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        filter: brightness(0.5) blur(5px);
+        background-color: black;
+    }
+    > #hero {
+        position: relative;
+        z-index: 1;
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1em;
+        }
+        height: 100vh;
+        #hero_button {
+            aspect-ratio: 1;
+            button {
+                width: 30%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+                animation: pulse 2s infinite ease-out alternate;
+                &:hover {
+                    animation-play-state: paused;
+                    * {
+                        text-shadow: 0 0 40px black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    hgroup {
+        h1 {
+            color: white !important;
+        }
+        p {
+            color: lightgray !important;
+        }
+    }
+}
+#pricing {
+    table {
+        th {
+            padding: 1em;
+            font-size: 1.2em;
+        }
+        td {
+            padding: 1em;
+        }
+        th, td:first-child {
+            text-align: center;
+            font-weight: bold !important;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        border-radius: 60%;
+    }
+    100% {
+        transform: scale(1);
+        border-radius: 45%;
+    }
+}
+#features {
+    div {
+        padding: 1em;
+        text-align: center;
+        svg {
+            width: 5em;
+            aspect-ratio: 1;
+        }
+    }
+}
+
+p {
+    max-width: 60ch;
+}

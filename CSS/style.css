@@ -1,0 +1,88 @@
+#video_container {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 2em;
+}
+#video_container header {
+  padding: 1em;
+}
+#video_container #hero_vid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: brightness(0.5) blur(5px);
+  background-color: black;
+}
+#video_container > #hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+#video_container > #hero > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+#video_container > #hero #hero_button {
+  aspect-ratio: 1;
+}
+#video_container > #hero #hero_button button {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  animation: pulse 2s infinite ease-out alternate;
+}
+#video_container > #hero #hero_button button:hover {
+  animation-play-state: paused;
+}
+#video_container > #hero #hero_button button:hover * {
+  text-shadow: 0 0 40px black;
+  color: white;
+}
+#video_container hgroup h1 {
+  color: white !important;
+}
+#video_container hgroup p {
+  color: lightgray !important;
+}
+
+#pricing table th {
+  padding: 1em;
+  font-size: 1.2em;
+}
+#pricing table td {
+  padding: 1em;
+}
+#pricing table th, #pricing table td:first-child {
+  text-align: center;
+  font-weight: bold !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    border-radius: 60%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 45%;
+  }
+}
+#features div {
+  padding: 1em;
+  text-align: center;
+}
+#features div svg {
+  width: 5em;
+  aspect-ratio: 1;
+}
+
+p {
+  max-width: 60ch;
+}/*# sourceMappingURL=style.css.map */

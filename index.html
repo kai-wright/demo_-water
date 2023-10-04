@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/PICO/pico.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>@Water</title>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="video_container">
+        <video playsinline autoplay muted loop id="hero_vid">
+            <source src="VIDEO/water.mp4" type="video/mp4">
+        </video>
+        <header class="container-fluid">
+            <nav role="navigation" class="container">
+                <ul>
+                    <li><b>@Water</b></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><button onclick="document.getElementById('water_modal').setAttribute('open', 'true')">Try now!</button></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero" class="grid">
+            <div>
+                <hgroup>
+                    <h1>@Water</h1>
+                    <p>Delivering water to your e-mail inbox since 3011</p>
+                </hgroup>
+            </div>
+            <div id="hero_button">
+                <button onclick="document.getElementById('water_modal').setAttribute('open', 'true')">💧<br> Try now!</button>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <section id="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>check</title><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg>
+                    <br><br>Easy to use</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>fast-forward</title><path d="M13,6V18L21.5,12M4,18L12.5,12L4,6V18Z" /></svg>
+                    <br><br>Fast
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>currency-usd-off</title><path d="M3,4.27L4.28,3L21,19.72L19.73,21L16.06,17.33C15.44,18 14.54,18.55 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15H9C9,16.08 10.37,17 12,17C13.13,17 14.14,16.56 14.65,15.92L11.68,12.95C9.58,12.42 7,11.75 7,9C7,8.77 7,8.55 7.07,8.34L3,4.27M10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C11.63,7 11.28,7.05 10.95,7.13L9.4,5.58L10.5,5.18Z" /></svg>
+                    <br><br>Free</div>
+            </div>
+        </section>
+        <section>
+            <h2>How it works</h2>
+            <p>@Water is a simple app that delivers water to your email instantly. It's free and easy to use and only takes a few seconds. We also offer mobile apps for Android, iOS and MyBrainWave™.</p>
+            <p>We created @Water to help programmers and students stay hydrated during long coding sessions. We hope you enjoy it!</p>
+            </p>
+        </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <table role="grid">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Free</th>
+                    <th scope="col">Pro</th>
+                    <th scope="col">Premium</th>
+                </tr>
+                <tr>
+                    <td scope="row">Pricing</td>
+                    <td>$0 forever!</td>
+                    <td>💵 $5<sub>p/month</sub></td>
+                    <td>💸 $10<sub>p/month</sub></td>
+                </tr>
+                <tr>
+                    <td scope="row">Unlimited</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr scope="row">
+                    <td>Delivery time</td>
+                    <td>🚀 Instant</td>
+                    <td>🚀 Instant</td>
+                    <td>🚀 Instant</td>
+                </tr>
+                <tr scope="row">
+                    <td>Order Method</td>
+                    <td>📱 Web and App</td>
+                    <td><b>Free</b> + 📦 Regular Delivery</td>
+                    <td><b>Pro</b> + 🧠 Brainwave detection</td>
+                </tr>
+                <tr scope="row">
+                    <td>Water quality?</td>
+                    <td>Tap water</td>
+                    <td>Spring water</td>
+                    <td>Ultra pure water</td>
+                </tr>
+                <tr scope="row">
+                    <td>Water temperature?</td>
+                    <td>Standard</td>
+                    <td><b>Free</b> + ❄️ Chilled + 🧊 Ice</td>
+                    <td><b>Pro</b> + ♨️ Hot</td>
+                </tr>
+                <tr scope="row">
+                    <td>Support?</td>
+                    <td>Forums</td>
+                    <td>Standard Support</td>
+                    <td>Expidited Support</td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <p>Dummy site by Kai Wright</p>
+            <p>© 2023 Kai Wright</p>
+            <p>This site is only for demonstration purposes and is not affiliated with any company, product or service</p>
+        </footer>
+    </main>
+    <dialog id="water_modal" open="false">
+        <article>
+            <h3>Sorry, technical difficulties</h3>
+            <p>We are experiencing technical difficulties. Please try again later maybe in a few decades. . .</p>
+            <footer>
+                <a href="#cancel" id="water_retry" role="button" class="secondary" aria-busy="false" onclick="document.getElementById('water_retry').setAttribute('aria-busy', 'true');setTimeout(() => document.getElementById('water_retry').setAttribute('aria-busy', 'false'), 2000);">Try again?</a>
+                <a href="#confirm" role="button" onclick="document.getElementById('water_modal').setAttribute('open', 'false')">That's fine</a>
+              </footer>
+        </article>
+    </dialog>
+</body>
+</html>
